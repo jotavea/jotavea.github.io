@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>João Vitor Alves · Backend e Dados</title>
+  <meta name="description" content="Portfólio de João Vitor Alves: projetos em Python com foco em backend e dados.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <a class="logo" href="#inicio">jotavea</a>
+    <nav>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <p class="etiqueta">Backend · Dados</p>
+      <h1>Olá, eu sou o João Vitor.</h1>
+      <p class="lead">
+        Desenvolvo em Python com foco em backend e análise de dados.
+        Aqui estão alguns dos projetos que construí e publiquei no GitHub.
+      </p>
+      <div class="acoes">
+        <a class="botao" href="#projetos">Ver projetos</a>
+        <a class="botao secundario" href="https://github.com/jotavea" target="_blank" rel="noopener">GitHub</a>
+        <a class="botao secundario" href="https://www.linkedin.com/in/jooaovitoralves/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos</h2>
+
+      <div class="grade">
+        <article class="card destaque">
+          <span class="selo">Destaque</span>
+          <h3>Painel de gastos pessoais</h3>
+          <p>
+            Dashboard interativo para acompanhar receitas e despesas a partir de um extrato
+            CSV ou Excel. Tem indicadores, gráficos por categoria, comparação mensal,
+            filtros por período e categoria, categorização automática por palavras-chave
+            e exportação dos dados filtrados.
+          </p>
+          <ul class="tags">
+            <li>Python</li><li>Streamlit</li><li>Pandas</li><li>Plotly</li>
+          </ul>
+          <a class="link" href="https://github.com/jotavea/painel-gastos-pessoais" target="_blank" rel="noopener">Ver no GitHub →</a>
+        </article>
+
+        <article class="card">
+          <h3>Sistema de estoque</h3>
+          <p>
+            Programa em Python que guarda produtos e quantidades em um dicionário,
+            com entrada, saída e consulta de estoque, validação das operações
+            e tratamento de opções inválidas.
+          </p>
+          <ul class="tags">
+            <li>Python</li>
+          </ul>
+          <a class="link" href="https://github.com/jotavea/Sistema-Estoque-Python" target="_blank" rel="noopener">Ver no GitHub →</a>
+        </article>
+
+        <article class="card">
+          <h3>Quiz em Python</h3>
+          <p>
+            Projeto de quiz feito em Python, para praticar lógica de programação
+            e interação com o usuário.
+          </p>
+          <ul class="tags">
+            <li>Python</li>
+          </ul>
+          <a class="link" href="https://github.com/jotavea/projeto-python-quiz" target="_blank" rel="noopener">Ver no GitHub →</a>
+        </article>
+
+        <article class="card">
+          <h3>Jogo da adivinhação</h3>
+          <p>
+            Jogo de adivinhação numérica em Python.
+          </p>
+          <ul class="tags">
+            <li>Python</li>
+          </ul>
+          <a class="link" href="https://github.com/jotavea/projeto-py-adivinhacao" target="_blank" rel="noopener">Ver no GitHub →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Quer conversar sobre um projeto ou oportunidade? Me chame por aqui:</p>
+      <div class="acoes">
+        <a class="botao" href="https://www.linkedin.com/in/jooaovitoralves/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="botao secundario" href="https://github.com/jotavea" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>© <span id="ano"></span> João Vitor Alves</p>
+  </footer>
+
+  <script>
+    document.getElementById("ano").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
