@@ -3,117 +3,203 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>João Vitor Alves · Backend e Dados</title>
-  <meta name="description" content="Portfólio de João Vitor Alves: projetos em Python com foco em backend e dados.">
+  <title>João Vitor Alves · Desenvolvedor Python (Backend e Dados)</title>
+  <meta name="description" content="Portfólio de João Vitor Alves, desenvolvedor Python em busca de estágio ou vaga júnior em backend e dados. Projetos com Python, Pandas, Streamlit e JavaScript.">
+  <meta name="theme-color" content="#1b765c">
+  <link rel="canonical" href="https://jotavea.github.io/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://jotavea.github.io/">
+  <meta property="og:title" content="João Vitor Alves · Desenvolvedor Python (Backend e Dados)">
+  <meta property="og:description" content="Em busca de estágio ou vaga júnior. Projetos com Python, Pandas, Streamlit e JavaScript, todos publicados no GitHub.">
+  <meta property="og:image" content="https://jotavea.github.io/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "João Vitor Alves",
+    "url": "https://jotavea.github.io/",
+    "sameAs": [
+      "https://github.com/jotavea",
+      "https://www.linkedin.com/in/jooaovitoralves/"
+    ],
+    "knowsAbout": ["Python", "SQL", "Pandas", "JavaScript", "Análise de dados"]
+  }
+  </script>
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
   <header class="topo">
     <a class="logo" href="#inicio">jotavea</a>
-    <nav>
+    <nav aria-label="Principal">
+      <a href="#sobre">Sobre</a>
       <a href="#projetos">Projetos</a>
+      <a href="#skills">Skills</a>
       <a href="#contato">Contato</a>
     </nav>
   </header>
 
-  <main>
+  <main id="conteudo">
     <section id="inicio" class="hero">
-      <p class="etiqueta">Backend · Dados · Produtos web</p>
-      <h1>Transformo ideias em projetos que funcionam.</h1>
+      <p class="status"><span class="ponto" aria-hidden="true"></span>Aberto a estágio e vaga júnior</p>
+      <h1>Desenvolvedor Python focado em dados e backend.</h1>
       <p class="lead">
-        Desenvolvo soluções com Python e JavaScript, unindo backend, dados e experiências simples de usar.
-        Aqui estão alguns projetos que construí e publiquei no GitHub.
+        Sou o João Vitor. Construo projetos com Python e JavaScript, trabalho com tratamento
+        e visualização de dados e estou aprofundando SQL e backend.
+        Todo o código está publicado no GitHub.
       </p>
-      <div class="mini-metricas"><span><strong>5</strong> projetos publicados</span><span><strong>Python</strong> e web</span><span><strong>Em evolução</strong> sempre</span></div>
       <div class="acoes">
         <a class="botao" href="#projetos">Ver projetos</a>
         <a class="botao secundario" href="https://github.com/jotavea" target="_blank" rel="noopener">GitHub</a>
         <a class="botao secundario" href="https://www.linkedin.com/in/jooaovitoralves/" target="_blank" rel="noopener">LinkedIn</a>
+        <!-- Quando tiver o currículo em PDF, coloque o arquivo na raiz do repositório (ex.: curriculo-joao-vitor-alves.pdf) e descomente:
+        <a class="botao secundario" href="curriculo-joao-vitor-alves.pdf" download>Baixar currículo</a>
+        -->
+      </div>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre</h2>
+      <div class="sobre-texto">
+        <p>
+          Aprendi Python em curso em vídeo e na Udemy e estudei SQL também pela Udemy.
+          Para consolidar o que aprendo, construo projetos completos e publico o código,
+          como o painel que trata extratos em CSV e Excel e o app que gera material de estudo
+          direto no navegador.
+        </p>
+        <p>
+          Busco um primeiro time onde eu possa trabalhar com dados e backend, receber
+          feedback de código e crescer rápido.
+        </p>
       </div>
     </section>
 
     <section id="projetos">
       <h2>Projetos</h2>
-      <p class="secao-intro">Algumas coisas que construí para praticar, resolver problemas e aprender fazendo.</p>
+      <p class="secao-intro">O que construí, como funciona por dentro e onde ver o código.</p>
 
       <div class="grade">
-        <article class="card">
-          <h3>Painel de gastos pessoais</h3>
-          <p>
-            Dashboard interativo para acompanhar receitas e despesas a partir de um extrato
-            CSV ou Excel. Tem indicadores, gráficos por categoria, comparação mensal,
-            filtros por período e categoria, categorização automática por palavras-chave
-            e exportação dos dados filtrados.
-          </p>
-          <ul class="tags">
-            <li>Python</li><li>Streamlit</li><li>Pandas</li><li>Plotly</li>
-          </ul>
-          <a class="link" href="https://github.com/jotavea/painel-gastos-pessoais" target="_blank" rel="noopener">Ver no GitHub →</a>
-        </article>
-
         <article class="card destaque">
           <span class="selo">Projeto em destaque</span>
+          <h3>Painel de gastos pessoais</h3>
+          <dl class="caso">
+            <div>
+              <dt>O que resolve</dt>
+              <dd>Transforma um extrato bruto em respostas: quanto entrou, quanto saiu e para onde foi o dinheiro.</dd>
+            </div>
+            <div>
+              <dt>Como funciona</dt>
+              <dd>
+                Lê CSV (com vírgula ou ponto e vírgula, UTF-8 ou Latin-1) e Excel, padroniza nomes de colunas,
+                datas e valores no formato brasileiro e sugere categorias a partir da descrição quando elas
+                faltam. O painel mostra indicadores, gastos por categoria, evolução mensal, filtros por período
+                e categoria e exporta os dados filtrados.
+              </dd>
+            </div>
+          </dl>
+          <ul class="tags" aria-label="Tecnologias">
+            <li>Python</li><li>Pandas</li><li>Streamlit</li><li>Plotly</li>
+          </ul>
+          <div class="links">
+            <a class="link" href="https://github.com/jotavea/painel-gastos-pessoais" target="_blank" rel="noopener">Ver código →</a>
+            <!-- Depois de publicar no Streamlit Community Cloud, adicione o link da demo aqui:
+            <a class="link" href="https://SEU-APP.streamlit.app" target="_blank" rel="noopener">Abrir demo →</a>
+            -->
+          </div>
+        </article>
+
+        <article class="card">
           <h3>Estudaí · Assistente de estudos</h3>
-          <p>
-            Aplicação web que recebe textos ou PDFs e transforma o conteúdo em resumo,
-            flashcards interativos e perguntas de revisão para apoiar o estudo.
-          </p>
-          <ul class="tags">
+          <dl class="caso">
+            <div>
+              <dt>O que resolve</dt>
+              <dd>Transforma um texto ou PDF em material de revisão: resumo, flashcards interativos e perguntas.</dd>
+            </div>
+            <div>
+              <dt>Como funciona</dt>
+              <dd>Roda inteiro no navegador, sem backend. A leitura de PDF usa PDF.js e os arquivos não saem do computador de quem usa.</dd>
+            </div>
+          </dl>
+          <ul class="tags" aria-label="Tecnologias">
             <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PDF.js</li>
           </ul>
-          <a class="link" href="https://github.com/jotavea/estudai" target="_blank" rel="noopener">Ver no GitHub →</a>
+          <div class="links">
+            <a class="link" href="https://github.com/jotavea/estudai" target="_blank" rel="noopener">Ver código →</a>
+          </div>
         </article>
 
         <article class="card">
-          <h3>Sistema de estoque</h3>
-          <p>
-            Programa em Python que guarda produtos e quantidades em um dicionário,
-            com entrada, saída e consulta de estoque, validação das operações
-            e tratamento de opções inválidas.
+          <h3>Exercícios de lógica em Python</h3>
+          <p class="card-texto">
+            Programas de linha de comando que usei para praticar lógica, entrada de dados e estruturas básicas.
+            Foram o ponto de partida para os projetos acima.
           </p>
-          <ul class="tags">
+          <ul class="mini-lista">
+            <li>
+              <a href="https://github.com/jotavea/Sistema-Estoque-Python" target="_blank" rel="noopener">Sistema de estoque</a>
+              <span>entrada, saída e consulta de produtos</span>
+            </li>
+            <li>
+              <a href="https://github.com/jotavea/projeto-python-quiz" target="_blank" rel="noopener">Quiz</a>
+              <span>perguntas e respostas no terminal</span>
+            </li>
+            <li>
+              <a href="https://github.com/jotavea/projeto-py-adivinhacao" target="_blank" rel="noopener">Jogo da adivinhação</a>
+              <span>adivinhe o número sorteado</span>
+            </li>
+          </ul>
+          <ul class="tags" aria-label="Tecnologias">
             <li>Python</li>
           </ul>
-          <a class="link" href="https://github.com/jotavea/Sistema-Estoque-Python" target="_blank" rel="noopener">Ver no GitHub →</a>
         </article>
+      </div>
+    </section>
 
-        <article class="card">
-          <h3>Quiz em Python</h3>
-          <p>
-            Projeto de quiz feito em Python, para praticar lógica de programação
-            e interação com o usuário.
-          </p>
-          <ul class="tags">
-            <li>Python</li>
-          </ul>
-          <a class="link" href="https://github.com/jotavea/projeto-python-quiz" target="_blank" rel="noopener">Ver no GitHub →</a>
-        </article>
+    <section id="skills">
+      <h2>Skills</h2>
+      <p class="secao-intro">Separei o que já uso nos projetos do que estou estudando agora.</p>
 
-        <article class="card">
-          <h3>Jogo da adivinhação</h3>
-          <p>
-            Jogo de adivinhação numérica em Python.
-          </p>
-          <ul class="tags">
-            <li>Python</li>
+      <div class="skills-grade">
+        <div class="skill-bloco">
+          <h3>Uso nos meus projetos</h3>
+          <ul class="tags" aria-label="Uso nos meus projetos">
+            <li>Python</li><li>Pandas</li><li>Plotly</li><li>Streamlit</li>
+            <li>JavaScript</li><li>HTML</li><li>CSS</li><li>Git e GitHub</li>
           </ul>
-          <a class="link" href="https://github.com/jotavea/projeto-py-adivinhacao" target="_blank" rel="noopener">Ver no GitHub →</a>
-        </article>
+        </div>
+        <div class="skill-bloco">
+          <h3>Estudando</h3>
+          <ul class="tags" aria-label="Estudando">
+            <li>SQL</li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <section id="contato">
       <h2>Contato</h2>
-      <p>Quer conversar sobre um projeto ou oportunidade? Me chame por aqui:</p>
+      <p>Estou buscando estágio ou vaga júnior em backend e dados. Se houver uma oportunidade, ou se quiser conversar sobre meus projetos, me chame.</p>
       <div class="acoes">
         <a class="botao" href="https://www.linkedin.com/in/jooaovitoralves/" target="_blank" rel="noopener">LinkedIn</a>
         <a class="botao secundario" href="https://github.com/jotavea" target="_blank" rel="noopener">GitHub</a>
+        <!-- Para adicionar e-mail, descomente e troque pelo seu endereço:
+        <a class="botao secundario" href="mailto:SEU-EMAIL@exemplo.com">E-mail</a>
+        -->
       </div>
     </section>
   </main>
 
   <footer class="rodape">
-    <p>© <span id="ano"></span> João Vitor Alves</p>
+    <p>© <span id="ano">2026</span> João Vitor Alves</p>
   </footer>
 
   <script>
