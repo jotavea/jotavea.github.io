@@ -25,11 +25,39 @@
     "@type": "Person",
     "name": "João Vitor Alves",
     "url": "https://jotavea.github.io/",
+    "jobTitle": "Desenvolvedor Python",
     "sameAs": [
       "https://github.com/jotavea",
       "https://www.linkedin.com/in/jooaovitoralves/"
     ],
     "knowsAbout": ["Python", "SQL", "Pandas", "JavaScript", "Análise de dados"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Projetos de João Vitor Alves",
+    "itemListElement": [
+      {
+        "@type": "ListItem", "position": 1,
+        "item": {
+          "@type": "SoftwareSourceCode",
+          "name": "Painel de gastos pessoais",
+          "codeRepository": "https://github.com/jotavea/painel-gastos-pessoais",
+          "programmingLanguage": "Python"
+        }
+      },
+      {
+        "@type": "ListItem", "position": 2,
+        "item": {
+          "@type": "SoftwareSourceCode",
+          "name": "Estudaí · Assistente de estudos",
+          "codeRepository": "https://github.com/jotavea/estudai",
+          "programmingLanguage": "JavaScript"
+        }
+      }
+    ]
   }
   </script>
 
@@ -38,33 +66,51 @@
 <body>
   <a class="pular" href="#conteudo">Pular para o conteúdo</a>
 
-  <header class="topo">
-    <a class="logo" href="#inicio">jotavea</a>
-    <nav aria-label="Principal">
-      <a href="#sobre">Sobre</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#skills">Skills</a>
-      <a href="#contato">Contato</a>
-    </nav>
+  <header class="topo-fixo">
+    <div class="topo">
+      <a class="logo" href="#inicio">jotavea</a>
+      <nav aria-label="Principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#skills">Skills</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
   </header>
 
   <main id="conteudo">
     <section id="inicio" class="hero">
-      <p class="status"><span class="ponto" aria-hidden="true"></span>Aberto a estágio e vaga júnior</p>
-      <h1>Desenvolvedor Python focado em dados e backend.</h1>
-      <p class="lead">
-        Sou o João Vitor. Construo projetos com Python e JavaScript, trabalho com tratamento
-        e visualização de dados e estou aprofundando SQL e backend.
-        Todo o código está publicado no GitHub.
-      </p>
-      <div class="acoes">
-        <a class="botao" href="#projetos">Ver projetos</a>
-        <a class="botao secundario" href="https://github.com/jotavea" target="_blank" rel="noopener">GitHub</a>
-        <a class="botao secundario" href="https://www.linkedin.com/in/jooaovitoralves/" target="_blank" rel="noopener">LinkedIn</a>
-        <!-- Quando tiver o currículo em PDF, coloque o arquivo na raiz do repositório (ex.: curriculo-joao-vitor-alves.pdf) e descomente:
-        <a class="botao secundario" href="curriculo-joao-vitor-alves.pdf" download>Baixar currículo</a>
-        -->
+      <div class="hero-texto">
+        <p class="status"><span class="ponto" aria-hidden="true"></span>Aberto a estágio e vaga júnior</p>
+        <h1>Desenvolvedor Python focado em dados e backend.</h1>
+        <p class="lead">
+          Sou o João Vitor. Construo projetos com Python e JavaScript, trabalho com tratamento
+          e visualização de dados e estou aprofundando SQL e backend.
+          Todo o código está publicado no GitHub.
+        </p>
+        <div class="acoes">
+          <a class="botao" href="#projetos">Ver projetos</a>
+          <a class="botao secundario" href="https://github.com/jotavea" target="_blank" rel="noopener">GitHub</a>
+          <a class="botao secundario" href="https://www.linkedin.com/in/jooaovitoralves/" target="_blank" rel="noopener">LinkedIn</a>
+          <!-- Quando tiver o currículo em PDF, coloque o arquivo na raiz do repositório (ex.: curriculo-joao-vitor-alves.pdf) e descomente:
+          <a class="botao secundario" href="curriculo-joao-vitor-alves.pdf" download>Baixar currículo</a>
+          -->
+        </div>
+        <ul class="fatos" aria-label="Resumo">
+          <li><strong>2</strong> projetos completos</li>
+          <li><strong>3</strong> exercícios de lógica</li>
+          <li><strong>100%</strong> do código aberto</li>
+        </ul>
       </div>
+
+      <a class="hero-preview" href="#projetos" aria-label="Ver os projetos">
+        <div class="janela">
+          <div class="janela-barra" aria-hidden="true"><i></i><i></i><i></i></div>
+          <img src="assets/painel-gastos.webp" width="1400" height="832"
+               alt="Painel de gastos pessoais com indicadores, gráfico de rosca por categoria e gráfico de barras mensal">
+        </div>
+        <span class="hero-legenda">Painel de gastos pessoais · Python + Streamlit</span>
+      </a>
     </section>
 
     <section id="sobre">
@@ -85,10 +131,21 @@
 
     <section id="projetos">
       <h2>Projetos</h2>
-      <p class="secao-intro">O que construí, como funciona por dentro e onde ver o código.</p>
+      <p class="secao-intro">O que construí, como funciona por dentro e onde ver o código. Clique nas imagens para ampliar.</p>
 
-      <div class="grade">
-        <article class="card destaque">
+      <article class="projeto destaque">
+        <figure class="projeto-midia">
+          <button type="button" class="janela ampliar" data-src="assets/painel-gastos.webp"
+                  data-alt="Painel de gastos pessoais com indicadores, gráfico de rosca por categoria e gráfico de barras mensal"
+                  aria-label="Ampliar print do painel de gastos pessoais">
+            <span class="janela-barra" aria-hidden="true"><i></i><i></i><i></i></span>
+            <img src="assets/painel-gastos.webp" width="1400" height="832" loading="lazy"
+                 alt="Painel de gastos pessoais com indicadores, gráfico de rosca por categoria e gráfico de barras mensal">
+          </button>
+          <figcaption>Print real do app rodando com os dados de exemplo do repositório.</figcaption>
+        </figure>
+
+        <div class="projeto-corpo">
           <span class="selo">Projeto em destaque</span>
           <h3>Painel de gastos pessoais</h3>
           <dl class="caso">
@@ -110,14 +167,34 @@
             <li>Python</li><li>Pandas</li><li>Streamlit</li><li>Plotly</li>
           </ul>
           <div class="links">
-            <a class="link" href="https://github.com/jotavea/painel-gastos-pessoais" target="_blank" rel="noopener">Ver código →</a>
-            <!-- Depois de publicar no Streamlit Community Cloud, adicione o link da demo aqui:
-            <a class="link" href="https://SEU-APP.streamlit.app" target="_blank" rel="noopener">Abrir demo →</a>
+            <a class="botao pequeno" href="https://github.com/jotavea/painel-gastos-pessoais" target="_blank" rel="noopener">Ver código</a>
+            <!-- Depois de publicar no Streamlit Community Cloud, adicione o botão da demo aqui:
+            <a class="botao pequeno demo" href="https://SEU-APP.streamlit.app" target="_blank" rel="noopener">Abrir demo</a>
             -->
           </div>
-        </article>
+          <details class="rodar">
+            <summary>Rodar na minha máquina</summary>
+            <pre><code>git clone https://github.com/jotavea/painel-gastos-pessoais
+cd painel-gastos-pessoais
+pip install -r requirements.txt
+streamlit run app.py</code></pre>
+          </details>
+        </div>
+      </article>
 
-        <article class="card">
+      <article class="projeto invertido">
+        <figure class="projeto-midia">
+          <button type="button" class="janela ampliar" data-src="assets/estudai.webp"
+                  data-alt="Estudaí com um texto colado e o resumo gerado logo abaixo, com abas de flashcards e perguntas"
+                  aria-label="Ampliar print do Estudaí">
+            <span class="janela-barra" aria-hidden="true"><i></i><i></i><i></i></span>
+            <img class="topo-img" src="assets/estudai.webp" width="1400" height="1237" loading="lazy"
+                 alt="Estudaí com um texto colado e o resumo gerado logo abaixo, com abas de flashcards e perguntas">
+          </button>
+          <figcaption>Print real do app gerando um resumo a partir de um texto colado.</figcaption>
+        </figure>
+
+        <div class="projeto-corpo">
           <h3>Estudaí · Assistente de estudos</h3>
           <dl class="caso">
             <div>
@@ -133,35 +210,36 @@
             <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PDF.js</li>
           </ul>
           <div class="links">
-            <a class="link" href="https://github.com/jotavea/estudai" target="_blank" rel="noopener">Ver código →</a>
+            <a class="botao pequeno demo" href="demos/estudai/" target="_blank" rel="noopener">Abrir demo</a>
+            <a class="botao pequeno secundario" href="https://github.com/jotavea/estudai" target="_blank" rel="noopener">Ver código</a>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="card">
-          <h3>Exercícios de lógica em Python</h3>
-          <p class="card-texto">
-            Programas de linha de comando que usei para praticar lógica, entrada de dados e estruturas básicas.
-            Foram o ponto de partida para os projetos acima.
-          </p>
-          <ul class="mini-lista">
-            <li>
-              <a href="https://github.com/jotavea/Sistema-Estoque-Python" target="_blank" rel="noopener">Sistema de estoque</a>
-              <span>entrada, saída e consulta de produtos</span>
-            </li>
-            <li>
-              <a href="https://github.com/jotavea/projeto-python-quiz" target="_blank" rel="noopener">Quiz</a>
-              <span>perguntas e respostas no terminal</span>
-            </li>
-            <li>
-              <a href="https://github.com/jotavea/projeto-py-adivinhacao" target="_blank" rel="noopener">Jogo da adivinhação</a>
-              <span>adivinhe o número sorteado</span>
-            </li>
-          </ul>
-          <ul class="tags" aria-label="Tecnologias">
-            <li>Python</li>
-          </ul>
-        </article>
-      </div>
+      <article class="card exercicios">
+        <h3>Exercícios de lógica em Python</h3>
+        <p class="card-texto">
+          Programas de linha de comando que usei para praticar lógica, entrada de dados e estruturas básicas.
+          Foram o ponto de partida para os projetos acima.
+        </p>
+        <ul class="mini-lista">
+          <li>
+            <a href="https://github.com/jotavea/Sistema-Estoque-Python" target="_blank" rel="noopener">Sistema de estoque</a>
+            <span>entrada, saída e consulta de produtos</span>
+          </li>
+          <li>
+            <a href="https://github.com/jotavea/projeto-python-quiz" target="_blank" rel="noopener">Quiz</a>
+            <span>perguntas e respostas no terminal</span>
+          </li>
+          <li>
+            <a href="https://github.com/jotavea/projeto-py-adivinhacao" target="_blank" rel="noopener">Jogo da adivinhação</a>
+            <span>adivinhe o número sorteado</span>
+          </li>
+        </ul>
+        <ul class="tags" aria-label="Tecnologias">
+          <li>Python</li>
+        </ul>
+      </article>
     </section>
 
     <section id="skills">
@@ -202,8 +280,41 @@
     <p>© <span id="ano">2026</span> João Vitor Alves</p>
   </footer>
 
+  <dialog id="lightbox" aria-label="Imagem ampliada">
+    <button type="button" class="fechar" aria-label="Fechar imagem">×</button>
+    <img id="lightbox-img" alt="">
+  </dialog>
+
   <script>
     document.getElementById("ano").textContent = new Date().getFullYear();
+
+    // Ampliar prints dos projetos
+    var box = document.getElementById("lightbox");
+    var boxImg = document.getElementById("lightbox-img");
+    document.querySelectorAll(".ampliar").forEach(function (b) {
+      b.addEventListener("click", function () {
+        boxImg.src = b.dataset.src;
+        boxImg.alt = b.dataset.alt;
+        if (box.showModal) box.showModal();
+      });
+    });
+    box.querySelector(".fechar").addEventListener("click", function () { box.close(); });
+    box.addEventListener("click", function (e) { if (e.target === box) box.close(); });
+
+    // Destaca no menu a seção que está na tela
+    var links = document.querySelectorAll(".topo nav a");
+    if ("IntersectionObserver" in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) {
+            links.forEach(function (a) {
+              a.classList.toggle("ativo", a.getAttribute("href") === "#" + en.target.id);
+            });
+          }
+        });
+      }, { rootMargin: "-40% 0px -55% 0px" });
+      document.querySelectorAll("main section[id]").forEach(function (s) { io.observe(s); });
+    }
   </script>
 </body>
 </html>
