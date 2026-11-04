@@ -224,6 +224,31 @@ h2 {
 .sobre-texto { max-width: 680px; margin-top: 16px; }
 .sobre-texto p { color: var(--suave); margin: 0 0 14px; font-size: 1.05rem; }
 
+/* Formação, experiência e cursos */
+.trajetoria {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 28px;
+}
+.trajeto {
+  background: var(--surface);
+  border: 1px solid var(--borda);
+  border-radius: 18px;
+  padding: 20px 22px;
+}
+.trajeto .rotulo {
+  font-size: .74rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--destaque);
+  margin: 0 0 6px;
+}
+.trajeto h3 { margin: 0 0 6px; font-size: 1.02rem; letter-spacing: -.01em; }
+.trajeto p { margin: 0 0 4px; color: var(--suave); font-size: .9rem; }
+.trajeto ul { margin: 4px 0 0; padding-left: 18px; color: var(--suave); font-size: .9rem; }
+
 /* Projetos */
 .projeto {
   display: grid;
@@ -328,7 +353,7 @@ h2 {
 
 .skills-grade {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
 }
 .skill-bloco {
@@ -345,6 +370,9 @@ h2 {
   border-top: 1px solid var(--borda);
 }
 #contato p { color: var(--suave); margin: 0 0 20px; max-width: 620px; }
+#contato .contato-linha { margin: 18px 0 0; font-size: .95rem; }
+#contato .contato-linha a { color: var(--destaque); font-weight: 750; }
+#contato .contato-linha a:hover { text-decoration: underline; }
 .rodape {
   padding-top: 26px;
   padding-bottom: 44px;
@@ -390,6 +418,7 @@ dialog#lightbox img {
   .hero { grid-template-columns: 1fr; gap: 36px; padding-top: 36px; }
   .projeto, .projeto.invertido { grid-template-columns: 1fr; gap: 22px; padding: 20px; }
   .projeto.invertido .projeto-midia { order: 0; }
+  .trajetoria, .skills-grade { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 640px) {
